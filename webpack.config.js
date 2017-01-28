@@ -21,6 +21,21 @@ module.exports = {
   },
   devServer: {
     historyApiFallback: true,
-    contentBase: './'
-  }
+    contentBase: './',
+    stats: {
+      cached: false,
+      colors: true,
+      hash: false,
+      version: false,
+      timings: false,
+      assets: false,
+      chunks: false,
+      modules: false,
+      reasons: true,
+      source: true,
+      errors: true,
+      errorDetails: true,
+      warnings: true,
+    }
+  },
 };
